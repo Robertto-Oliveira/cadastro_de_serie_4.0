@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="editar.css">
+    <title>GERENCIADOR DE SÉRIES 4.0</title>
+</head>
+<body>
+    <header id="body-header">
+        <h1>CADASTRO DE SÉRIES</h1>
+        <h2>CADASTRE A SUA SÉRIE PREFERIDA</h2>
+    </header>
+
+    <div class="max-container">
+
+        <div class="mini-container">
+            
+            <header id="mini-container-header"></header>
+            
+            <div class="editar">
+
+               <form id="form-editar"> 
+
+                    <p>EDITAR SÉRIE</p>
+
+                    <label for="txt">Nome da Série</label>
+                    <input id="serie-input" type="text" placeholder="Adicione uma série para editar">
+                    <br>
+
+                    <label for="txt">Temporada</label>
+                    <input id="season-input"  type="number"  min="1" max="100" placeholder="Adicione uma temporada para editar">
+                    <br>
+
+                    <label for="txt">Episódio</label>
+                    <input id="episode-input"  type="number"  min="1" max="2500" placeholder="Adicione um episódio para editar">
+                    <br>
+                </form>
+            
+            </div>
+
+            <div class="btn-edite">
+                <button class="btn-editar" type="button">EDITAR</button>
+                <button class="btn-cancelar" type="reset">LIMPAR</button>
+                <button class="btn-voltar" onclick="window.location.href='index.html'">HOME</button>
+            </div>
+                    
+        </div>
+    </div>
+    <footer>
+        COPYRIGHT 2023 - ROBERTO BRITO DE OLIVEIRA
+    </footer>
+
+    <script>
+        // Captura o elemento do formulário pelo ID
+        const formPesquisar = document.getElementById('form-editar');
+
+        // Captura o botão de cancelar pelo ID
+        const btnCancelar = document.querySelector('.btn-cancelar');
+
+        // Adiciona um evento de clique ao botão de cancelar
+        btnCancelar.addEventListener('click', function (event) {
+            // Impede o envio do formulário (caso esteja dentro de um formulário real)
+            event.preventDefault();
+
+            // Reseta o formulário para seus valores padrão
+            formPesquisar.reset();
+        });
+    </script>
+</body>
+</html>
+
+    

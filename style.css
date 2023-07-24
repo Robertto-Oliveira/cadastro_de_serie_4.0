@@ -1,0 +1,108 @@
+/* Reset de estilos para garantir a consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+.max-container {
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+.mini-container {
+  width: 50%;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+header h1 {
+  font-family: 'Bruno Ace', cursive;
+  font-size: 36px;
+}
+
+header h2 {
+  font-family: 'Bruno Ace', cursive;
+  font-size: 24px;
+}
+
+.normal {
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.mini-container-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.btn-normal {
+  display: flex;
+  justify-content: center;
+  padding-left: 6px;
+}
+
+.btn-normal :hover {
+  background-color: black;
+  transition: 0.3s;
+}
+
+.btn-cadastrar,
+.btn-editar,
+.btn-pesquisar {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-cadastrar {
+  background-color: #007bff;
+}
+
+.btn-editar {
+  background-color: #dc3545;
+}
+
+.btn-pesquisar {
+  background-color: #28a745;
+}
+
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+}
+
+
+

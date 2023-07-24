@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resultado.css">
+    <title>GERENCIADOR DE SÉRIES 4.0</title>
+</head>
+<body>
+    <header id="body-header">
+        <h1>CADASTRO DE SÉRIES</h1>
+        <h2>CADASTRE A SUA SÉRIE PREFERIDA</h2>
+    </header>
+
+    <div class="max-container">
+
+        <div class="mini-container">
+
+            <header id="mini-container-header">RESULTADO DA PESQUISA</header>
+
+            <div class="resultado" id="resultado-div" style="overflow-y: scroll; height: 350px;"></div>
+            
+            <div class="btn-resultado">
+                
+                <button class="btn-limpar">LIMPAR</button>
+                <button class="btn" onclick="window.location.href='index.html'">HOME</button>
+            </div>
+
+            
+        </div>
+        
+    </div>
+    
+    <footer>
+        COPYRIGHT 2023 - ROBERTO BRITO DE OLIVEIRA
+    </footer>
+
+
+<script>
+    // Captura a div de resultado pelo ID
+    const resultadoDiv = document.getElementById('resultado-div');
+
+    // Captura o botão de limpar pelo ID
+    const btnLimpar = document.querySelector('.btn-limpar');
+
+    // Adiciona um evento de clique ao botão de limpar
+    btnLimpar.addEventListener('click', function () {
+        // Limpa o conteúdo da div de resultado
+        resultadoDiv.innerHTML = '';
+    });
+    function realizarPesquisa(nomeSerie, temporada, episodio) {
+        // Aqui, você pode realizar a lógica de pesquisa com base nos valores passados.
+        // Neste exemplo, usaremos dados estáticos para fins de demonstração.
+
+        // Dados estáticos simulando os resultados da pesquisa
+        const dadosPesquisa = [
+            { nome: 'Série 1', temporada: 2, episodio: 10 },
+            { nome: 'Série 2', temporada: 1, episodio: 5 },
+            { nome: 'Série 3', temporada: 3, episodio: 15 },
+            { nome: 'Série 4', temporada: 9, episodio: 13 },
+            { nome: 'Série 5', temporada: 7, episodio: 55 },
+            { nome: 'Série 1', temporada: 2, episodio: 10 },
+            { nome: 'Série 2', temporada: 1, episodio: 5 },
+            { nome: 'Série 3', temporada: 3, episodio: 15 },
+            { nome: 'Série 4', temporada: 9, episodio: 13 },
+            { nome: 'Série 5', temporada: 7, episodio: 55 }
+        ];
+
+        // Limpa o conteúdo da div de resultado antes de exibir os novos resultados
+        resultadoDiv.innerHTML = '';
+
+        // Itera pelos dados de pesquisa e cria elementos para mostrar os resultados
+        dadosPesquisa.forEach(function (serie) {
+            // Cria elementos para mostrar os resultados
+            const resultadoItem = document.createElement('div');
+            resultadoItem.classList.add('resultado-item');
+
+            const nomeSerieElement = document.createElement('p');
+            nomeSerieElement.textContent = `Nome da Série: ${serie.nome}`;
+
+            const temporadaElement = document.createElement('p');
+            temporadaElement.textContent = `Temporada: ${serie.temporada}`;
+
+            const episodioElement = document.createElement('p');
+            episodioElement.textContent = `Episódio: ${serie.episodio}`;
+
+            // Adiciona os elementos criados à div de resultado
+            resultadoItem.appendChild(nomeSerieElement);
+            resultadoItem.appendChild(temporadaElement);
+            resultadoItem.appendChild(episodioElement);
+
+            resultadoDiv.appendChild(resultadoItem);
+        });
+    }
+
+    // Chamar a função de pesquisa inicialmente (pode ser removido se você quiser que a pesquisa seja iniciada apenas após o clique no botão)
+    realizarPesquisa('', '', '');
+</script>
+</body>
+</html>

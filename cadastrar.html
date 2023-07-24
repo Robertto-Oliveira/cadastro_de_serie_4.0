@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gerenciador de Séries 4.0 - Cadastro de séries favoritas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Courgette&family=Bruno+Ace&family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cadastrar.css">
+    <title>GERENCIADOR DE SÉRIES 4.0</title>
+</head>
+<body>
+    <header id="body-header">
+        <h1>CADASTRO DE SÉRIES</h1>
+        <h2>CADASTRE A SUA SÉRIE PREFERIDA</h2>
+    </header>
+
+    <div class="max-container">
+
+        <div class="mini-container">
+            
+            <header id="mini-container-header"></header>
+                        
+            <div class="cadastro">
+
+                <form id="form-cadastrar">
+
+                    <p>CADASTRAR SÉRIE</p>
+
+                    <label for="serie-input">Nome da Série</label>
+                    <input id="serie-input" type="text" placeholder="Adicione uma série">
+                    <br>
+
+                    <label for="temporada-input">Temporada</label>
+                    <input id="temporada-input" type="number" min="1" max="500" placeholder="Adicione uma temporada">
+                    <br>
+
+                    <label for="episodio-input">Episodio</label>
+                    <input id="episodio-input" type="number" min="1" max="1000" placeholder="Adicione um episódio">
+                    <br>
+
+                </form>
+            </div>
+
+            <div class="btn-cadastro">
+                
+                <button class="btn-cadastrar" type="button">CADASTRAR</button>
+                <button class="btn-cancelar" type="button">LIMPAR</button>
+                <button class="btn-voltar" onclick="window.location.href='index.html'">HOME</button>
+            
+            </div>
+                    
+        </div>
+    </div>
+    <footer>
+        COPYRIGHT 2023 - ROBERTO BRITO DE OLIVEIRA
+    </footer>
+
+    
+    <script>
+        // Captura o elemento do formulário pelo ID
+        const formCadastrar = document.getElementById('form-cadastrar');
+
+        // Captura o botão de cancelar pelo ID
+        const btnCancelar = document.querySelector('.btn-cancelar');
+
+        // Adiciona um evento de clique ao botão de cancelar
+        btnCancelar.addEventListener('click', function (event) {
+            // Impede o envio do formulário (caso esteja dentro de um formulário real)
+            event.preventDefault();
+
+            // Reseta o formulário para seus valores padrão
+            formCadastrar.reset();
+        });
+    </script>
+</body>
+</html>
+
+    

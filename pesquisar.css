@@ -1,0 +1,120 @@
+/* Reset de estilos para garantir a consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+.max-container {
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.mini-container {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o cabeçalho */
+#body-header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+#body-header h1 {
+    font-family: 'Bruno Ace', cursive;
+    font-size: 36px;
+}
+
+#body-header h2 {
+    font-family: 'Bruno Ace', cursive;
+    font-size: 24px;
+}
+
+/* Estilos para o formulário de pesquisa */
+.pesquisar {
+    margin-bottom: 20px;
+}
+
+.pesquisar p {
+    font-family: 'Bruno Ace', cursive;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para os botões */
+.btn-pesquisa {
+    text-align: center;
+}
+
+.btn-pesquisar,
+.btn-cancelar,
+.btn-voltar {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-pesquisar {
+    background-color: #007bff;
+}
+
+.btn-cancelar {
+    background-color: #dc3545;
+}
+
+.btn-voltar {
+    background-color: #28a745;
+}
+
+.btn-pesquisa :hover {
+    background-color: black;
+    transition: 0.3s;
+}
+
+/* Estilos para o rodapé */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+}
+  
