@@ -24,31 +24,28 @@
                         
             <div class="cadastro">
 
-                <form id="form-cadastrar">
+                <form id="form-cadastrar" action="/cadastrar_serie" method="POST">
 
                     <p>CADASTRAR SÉRIE</p>
 
-                    <label for="serie-input">Nome da Série</label>
-                    <input id="serie-input" type="text" placeholder="Adicione uma série">
+                    <label for="nome">Nome da Série:</label>
+                    <input id="nome" type="text" name="nome" required placeholder="Adicone uma da série">
                     <br>
 
-                    <label for="temporada-input">Temporada</label>
-                    <input id="temporada-input" type="number" min="1" max="500" placeholder="Adicione uma temporada">
+                    <label for="temporada">Temporada:</label>
+                    <input id="temporada" type="number" name="temporada" min="1" max="500" required placeholder="Adicione uma temporada">
                     <br>
 
-                    <label for="episodio-input">Episodio</label>
-                    <input id="episodio-input" type="number" min="1" max="1000" placeholder="Adicione um episódio">
+                    <label for="episodio">Episódio:</label>
+                    <input id="episodio" type="number" name="episodio" min="1" max="1000" required placeholder="Adicione um episódio">
                     <br>
-
                 </form>
             </div>
 
             <div class="btn-cadastro">
-                
-                <button class="btn-cadastrar" type="button">CADASTRAR</button>
+                <button class="btn-cadastrar" type="submit">CADASTRAR</button>
                 <button class="btn-cancelar" type="button">LIMPAR</button>
                 <button class="btn-voltar" onclick="window.location.href='index.html'">HOME</button>
-            
             </div>
                     
         </div>
@@ -56,24 +53,7 @@
     <footer>
         COPYRIGHT 2023 - ROBERTO BRITO DE OLIVEIRA
     </footer>
-
-    
-    <script>
-        // Captura o elemento do formulário pelo ID
-        const formCadastrar = document.getElementById('form-cadastrar');
-
-        // Captura o botão de cancelar pelo ID
-        const btnCancelar = document.querySelector('.btn-cancelar');
-
-        // Adiciona um evento de clique ao botão de cancelar
-        btnCancelar.addEventListener('click', function (event) {
-            // Impede o envio do formulário (caso esteja dentro de um formulário real)
-            event.preventDefault();
-
-            // Reseta o formulário para seus valores padrão
-            formCadastrar.reset();
-        });
-    </script>
+    <script src="javascript.js"></script>
 </body>
 </html>
 

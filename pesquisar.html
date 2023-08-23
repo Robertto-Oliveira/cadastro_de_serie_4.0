@@ -65,7 +65,7 @@
 
     <script>
         const btnPesquisar = document.querySelector('.btn-pesquisar');
-        const btnLimpar = document.querySelector('.btn-limpar');
+        //const btnCancelar = document.querySelector('.btn-limpar');
         
         btnPesquisar.addEventListener('click', function () {
             const nomeSerie = document.getElementById('serie-input').value;
@@ -75,12 +75,8 @@
             // Chamar a função que realiza a pesquisa e exibe os resultados
             realizarPesquisa(nomeSerie, temporada, episodio);
         });
-        
-        btnLimpar.addEventListener('click', function () {
-            const formPesquisar = document.getElementById('form-pesquisar');
-            formPesquisar.reset();
-        });
     </script>
+    <script src="javascript.js"></script>
 </body>
 </html>
 

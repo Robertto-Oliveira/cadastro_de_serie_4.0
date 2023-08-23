@@ -24,10 +24,14 @@ body {
 
 .mini-container {
     width: 50%;
+    height: 60%;
     background-color: #ffffff;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-image: url("img/Movie\ Night-cuate.png");
+    background-position: center;
+    background-size: cover;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -73,6 +77,7 @@ input[type="number"] {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: rgb(240,240,240, 0.9);
 }
 
 /* Estilos para os botões */
@@ -85,6 +90,7 @@ input[type="number"] {
 .btn-voltar {
     padding: 10px 20px;
     margin-right: 10px;
+    margin-top: 41px;
     border: none;
     border-radius: 5px;
     color: #fff;

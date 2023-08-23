@@ -30,10 +30,9 @@
 
             <header id="mini-container-header">RESULTADO DA PESQUISA</header>
 
-            <div class="resultado" id="resultado-div" style="overflow-y: scroll; height: 350px;"></div>
+            <div id="resultado-div" style="overflow-y: scroll; height: 350px;"></div>
             
             <div class="btn-resultado">
-                
                 <button class="btn-limpar">LIMPAR</button>
                 <button class="btn" onclick="window.location.href='index.html'">HOME</button>
             </div>
@@ -100,7 +99,6 @@
             resultadoItem.appendChild(nomeSerieElement);
             resultadoItem.appendChild(temporadaElement);
             resultadoItem.appendChild(episodioElement);
-
             resultadoDiv.appendChild(resultadoItem);
         });
     }
@@ -108,5 +106,6 @@
     // Chamar a função de pesquisa inicialmente (pode ser removido se você quiser que a pesquisa seja iniciada apenas após o clique no botão)
     realizarPesquisa('', '', '');
 </script>
+
 </body>
 </html>

@@ -24,14 +24,18 @@ body {
 
 .mini-container {
   width: 50%;
+  height: 60%;
   background-color: #ffffff;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  background-image: url("img/Movie\ Night-cuate.png");
+  background-position: center;
+  background-size: cover;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-header {
+#body-header {
   text-align: center;
   padding: 20px 0;
   background-color: #333;
@@ -55,9 +59,11 @@ header h2 {
 
 .mini-container-header {
   text-align: center;
+  color: white;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 70px;
+  background-color: rgb(51, 51, 51, 0.8);
 }
 
 .btn-normal {
@@ -76,6 +82,7 @@ header h2 {
 .btn-pesquisar {
     padding: 10px 20px;
     margin-right: 10px;
+    margin-top: 70px;
     border: none;
     border-radius: 5px;
     color: #fff;

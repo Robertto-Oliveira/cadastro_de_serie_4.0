@@ -30,28 +30,28 @@
             
             <div class="editar">
 
-               <form id="form-editar"> 
+                <form id="form-editar" action="/editar_serie" method="POST"> 
 
                     <p>EDITAR SÉRIE</p>
 
-                    <label for="txt">Nome da Série</label>
-                    <input id="serie-input" type="text" placeholder="Adicione uma série para editar">
+                    <label for="nome">Nome da Série</label>
+                    <input id="nome" type="text" name="nome" placeholder="Adicione uma série para editar">
                     <br>
 
-                    <label for="txt">Temporada</label>
-                    <input id="season-input"  type="number"  min="1" max="100" placeholder="Adicione uma temporada para editar">
+                    <label for="temporada">Temporada</label>
+                    <input id="temporada"  type="number" name="temporada"  min="1" max="100" placeholder="Adicione uma temporada para editar">
                     <br>
 
-                    <label for="txt">Episódio</label>
-                    <input id="episode-input"  type="number"  min="1" max="2500" placeholder="Adicione um episódio para editar">
+                    <label for="episodio">Episódio</label>
+                    <input id="episodio"  type="number" name="episodio"  min="1" max="2500" placeholder="Adicione um episódio para editar">
                     <br>
                 </form>
             
             </div>
 
             <div class="btn-edite">
-                <button class="btn-editar" type="button">EDITAR</button>
-                <button class="btn-cancelar" type="reset">LIMPAR</button>
+                <button class="btn-editar" type="submit">EDITAR</button>
+                <button class="btn-cancelar" type="button">LIMPAR</button>
                 <button class="btn-voltar" onclick="window.location.href='index.html'">HOME</button>
             </div>
                     
@@ -60,23 +60,7 @@
     <footer>
         COPYRIGHT 2023 - ROBERTO BRITO DE OLIVEIRA
     </footer>
-
-    <script>
-        // Captura o elemento do formulário pelo ID
-        const formPesquisar = document.getElementById('form-editar');
-
-        // Captura o botão de cancelar pelo ID
-        const btnCancelar = document.querySelector('.btn-cancelar');
-
-        // Adiciona um evento de clique ao botão de cancelar
-        btnCancelar.addEventListener('click', function (event) {
-            // Impede o envio do formulário (caso esteja dentro de um formulário real)
-            event.preventDefault();
-
-            // Reseta o formulário para seus valores padrão
-            formPesquisar.reset();
-        });
-    </script>
+    <script src="javascript.js"></script>
 </body>
 </html>
 
