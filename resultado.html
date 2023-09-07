@@ -30,11 +30,11 @@
 
             <header id="mini-container-header">RESULTADO DA PESQUISA</header>
 
-            <div id="resultado-div" style="overflow-y: scroll; height: 350px;"></div>
+            <div id="resultado-div"></div>
             
             <div class="btn-resultado">
-                <button class="btn-limpar">LIMPAR</button>
-                <button class="btn" onclick="window.location.href='index.html'">HOME</button>
+                <button type="button" class="btn-limpar">LIMPAR</button>
+                <button type="button" class="btn" onclick="window.location.href='index.html'">HOME</button>
             </div>
 
             
@@ -65,16 +65,8 @@
 
         // Dados estáticos simulando os resultados da pesquisa
         const dadosPesquisa = [
-            { nome: 'Série 1', temporada: 2, episodio: 10 },
-            { nome: 'Série 2', temporada: 1, episodio: 5 },
-            { nome: 'Série 3', temporada: 3, episodio: 15 },
-            { nome: 'Série 4', temporada: 9, episodio: 13 },
-            { nome: 'Série 5', temporada: 7, episodio: 55 },
-            { nome: 'Série 1', temporada: 2, episodio: 10 },
-            { nome: 'Série 2', temporada: 1, episodio: 5 },
-            { nome: 'Série 3', temporada: 3, episodio: 15 },
-            { nome: 'Série 4', temporada: 9, episodio: 13 },
-            { nome: 'Série 5', temporada: 7, episodio: 55 }
+            { nome: 'nome', temporada: 'temporada', episodio: 'episodio' },
+            
         ];
 
         // Limpa o conteúdo da div de resultado antes de exibir os novos resultados

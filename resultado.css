@@ -59,7 +59,7 @@ body {
 
 /* Estiliza os itens de resultado */
 .resultado-item {
-  background-color: rgb(240,240,240, 0.9);
+  background-color: rgb(240,240,240, 0.7);
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
@@ -68,6 +68,10 @@ body {
 
 .resultado-item p {
   margin-bottom: 5px;
+}
+
+#resultado-div {
+  overflow-y: scroll; height: 268px;
 }
 
 /* Estiliza os botões na parte inferior da página */
